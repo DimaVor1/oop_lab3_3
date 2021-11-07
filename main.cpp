@@ -53,7 +53,7 @@ int main() {
             }
             try {
                 IntVector c(s, els);  
-                a = c;// elements massive constructor
+                a = c;                                                         // elements massive constructor
                 m = 0;
             }
             catch (std::exception& ex) {
@@ -131,7 +131,7 @@ int main() {
             std::cout << "Enter element: ";
             getNum(e);
             if (CV == 1)
-                a.addEl(e);
+                a.addEl(e);                                                     // adding new element in vector        
             else
                 b.addEl(e);
             continue;
@@ -157,7 +157,7 @@ int main() {
                     std::cout << "Max element in current vector: " << a.maxNum() << std::endl;
                 else
                     std::cout << "Max element in current vector: " << b.maxNum() << std::endl;
-            }                                                               // finding maximum element       
+            }                                                                   // finding maximum element       
             catch (std::exception& ex) {
                 std::cout << ex.what() << std::endl;
             }
